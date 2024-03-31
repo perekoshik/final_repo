@@ -19,12 +19,11 @@ def api_get_dateinfo(date): #date in format dd-mm-yy
 
 
 def api_post_validate(count, nums, date):
-    header = {'X-Auth-Token':'ppo_10_10096', }
+    header = {'X-Auth-Token':'ppo_10_10096', 'Content-Type':'applications/json'}
     content = {"data":{"count": count, "rooms": [i for i in nums]}, "date": date,}
     print(json.dumps(content))
-    url = f"https://olimp.miet.ru/ppo_it_final/"
-    response = requests.get(url, headers=header, json=json.dumps(content))
-    print(response)
+    url = f"https://olimp.miet.ru/ppo_it_final"
+    response = requests.post(url, headers=header, data=json.dumps(content))
     resv_data = response.json()
     return resv_data
 

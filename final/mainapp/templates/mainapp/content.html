@@ -1,0 +1,29 @@
+<div class="base-block">
+    <div class="block-text">Lorem, ipsum dolor.</div>
+</div>
+
+<div style="display: flex; gap:30px; margin-left: 10px;">
+    <button class="btn-orange">btn</button>
+    <button class="btn-gray" onclick="{% url 'error' %}">btn</button>
+</div>
+
+<input type="text" class="base-input" style="margin: 10px;" placeholder="test">
+<input type="text" class="base-input" style="margin: 10px;" placeholder="test">
+<input type="text" class="base-input" style="margin: 10px;" placeholder="test">
+
+<div class="logs">
+    <!-- <div class="logs-title">Lorem</div>
+    <div class="line"></div> -->
+    <div class="logs-rows">
+
+    </div>
+</div>
+
+<div style="display: flex; gap:30px; margin-left: 10px;">
+    <button class="btn-orange" onclick="createLogsRow()">add</button>
+    <button class="btn-gray" onclick="resetLogs()">reset</button>
+</div>
+
+<div class="base-menu">
+    <img src="" alt="" class="btn-close">
+</div>

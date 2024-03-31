@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error!</title>
+
+    <link rel="stylesheet" href="{% static 'mainapp/css/error.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="head-text">
+            Error - title
+        </div>
+    </header>
+    <main>
+        <div class="error-block">
+            <div class="error-title">
+                <span>Error</span>
+                <div class="error-info">Title</div>
+            </div>
+            <div class="error-num">000</div>
+            <div class="error-textinfo">
+                description
+            </div>
+            <button class="btn-gray">Log</button>
+            <button class="btn-orange">Retry</button>
+        </div>
+    </main>
+</body>
+
+</html>
